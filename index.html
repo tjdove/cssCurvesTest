@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Geist+Mono:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Roboto Mono", serif;
+        color: white;
+        background: #202731;
+        overflow-x: hidden;
+      }
+      section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 400px;
+        padding: 80px 20vw;
+      }
+      .curve {
+        position: absolute;
+        height: 225px;
+        width: 100%;
+        bottom: 0;
+      }
+      .curve::before {
+        content: "";
+        position: absolute;
+        display: block;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: #202731;
+        transform: translate(45%, 50%);
+      }
+      .curve::after {
+        content: "";
+        position: absolute;
+        display: block;
+        border-radius: 50% 100%;
+        width: 65%;
+        height: 100%;
+        background-color: #3c31dd;
+        transform: translate(-14%, 10%);
+        z-index: 1;
+      }
+      /*  */
+      .blue {
+        background: #3c31dd;
+      }
+      .red {
+        background: #ff453a;
+      }
+      .green {
+        background: #32d74b;
+      }
+      .dark {
+        background: #202731;
+      }
+      .pink {
+        background: #ff4bd8;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="blue">
+      <h2>Title 1</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui molestiae,
+        quidem voluptatum itaque, natus suscipit aut quia quae accusamus quo,
+        est non iste facilis ullam inventore iure quod doloremque excepturi.
+      </p>
+    </section>
+    <div class="curve"></div>
+    <section class="">
+      <h2>Title 2</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui molestiae,
+        quidem voluptatum itaque, natus suscipit aut quia quae accusamus quo,
+        est non iste facilis ullam inventore iure quod doloremque excepturi.
+      </p>
+      <div class="curve"></div>
+    </section>
+  </body>
+</html>
